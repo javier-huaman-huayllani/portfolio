@@ -1,7 +1,8 @@
 @import url('../font/Inter-Thin.ttf');
 
 :root{
-    --main-color:#e38528;
+    --main-color:#638bc0;
+   /* --main-color:#e6e6e6;*/
 }
 
 *{
@@ -22,7 +23,7 @@ html{
 }
 
 body{
-    background: #fcf2e8;
+   background: #293241;
     padding-left: 30rem;
 }
 
@@ -54,14 +55,14 @@ section{
 }
 
 .btn:hover{
-    background:#111;
+    background:#ee886f;
     letter-spacing: .2rem;
 }
 
 header{
     position: fixed;
     top:0; left:0; bottom:0;
-    background:#222;
+    background:rgb(161, 161, 161);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -178,7 +179,7 @@ header .follow a:hover{
 
 .home .content h3{
     font-size: 4.5rem;
-    color:#111;
+    color:#E6E6E6;
     text-transform: uppercase;
 }
 
