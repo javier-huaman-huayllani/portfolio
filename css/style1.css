@@ -74,7 +74,7 @@
     height: 100%;
     background: rgba(255,255,255,0.05);
   }
-  @media (min-width:720px){
+  @media (max-width:480px){
     .botton{
         margin: 0;
         padding: 0;
