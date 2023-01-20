@@ -1,12 +1,15 @@
-@import url('../font/Inter-Thin.ttf');
+@import url('../font/DS-DIGIT.TTF');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@100&display=swap" rel="stylesheet');
+
+
 :root{
     --main-color:#638bc0;
    /* --main-color:#e6e6e6;*/
 }
 
 *{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Sofia Sans', sans-serif;
     margin:0; padding:0;
     box-sizing: border-box;
     outline: none; border:none;
@@ -19,45 +22,8 @@
 
 
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-  }
-
-.list-animation{
 
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background: #343f4f;
-}
-.wrapper{
-    display: flex;
-  }
-  .wrapper .static-txt{
-    color: #fff;
-    font-size: 60px;
-    font-weight: 400;
-  }
-  .wrapper .dynamic-txts{
-    margin-left: 15px;
-    height: 90px;
-    line-height: 90px;
-    overflow: hidden;
-  }
-  .dynamic-txts li{
-    list-style: none;
-    color: #FC6D6D;
-    font-size: 60px;
-    font-weight: 500;
-    position: relative;
-    top: 0;
-    animation: slide 12s steps(4) infinite;
-  }
   @keyframes slide {
     100%{
       top: -360px;
@@ -104,7 +70,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 50%;
+    width: 100%;
     height: 100%;
     background: rgba(255,255,255,0.05);
   }
@@ -136,13 +102,3 @@
 
   }
 
-.container{
-    text-align: center;
-    border: 7px solid red;
-    width: 300px;
-    height: 200px;
-    padding-top: 100px;
-}
-#btn{
-    font-size: 25px;
-}
