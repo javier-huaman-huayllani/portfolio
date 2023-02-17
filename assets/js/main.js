@@ -30,8 +30,8 @@ theme_btn.addEventListener("click",()=>{
 
 //=============Scrool Reveal Animation =========
 const sr= ScrollReveal({
-    origin:"top",
-    distance:"600px",
+    origin:"right",
+    distance:"300px",
     duration: 2500,
     delay:400
 });
@@ -44,3 +44,5 @@ sr.reveal('.profile-info ',{interval:100,delay:700});
 sr.reveal('.profile-btns ',{delay:800});
 sr.reveal('.filter-tabs ',{delay:900});
 sr.reveal('.filter-sections',{delay:1000});
+
+//comentario
