@@ -30,7 +30,7 @@ theme_btn.addEventListener("click",()=>{
 
 //=============Scrool Reveal Animation =========
 const sr= ScrollReveal({
-    origin:"right",
+    origin:"top",
     distance:"300px",
     duration: 2500,
     delay:400
