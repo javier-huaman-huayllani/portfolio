@@ -3,13 +3,16 @@
 
 :root{
     /* colors */
-    --blue-color:#42a5f5;
-    --blue-dark:#1a79c7;
-    --txt-dark:#22272b;
-    --txt-gray:#657481;
-    --txt-light:#e9ebec;
-    --txt-white: #fff;
-    --shadow-color:rgba(0,0,255,.2);
+    --blue-color:#4fb5d1;
+    --blue-dark:#4694aa;/*1a79c7;*/
+    --txt-dark:#fff;
+    --txt-gray:#e9ebec;
+    --txt-light:#657481;
+    --txt-white: #22272b;
+
+
+
+    --shadow-color:rgba(3, 89, 189, 0.2);
     --gradient-color: linear-gradient(180deg,
     rgba(0,0,255,.2) 0%,
     rgba(0,0,255,.2) 96%
@@ -20,6 +23,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(180deg, #5d6366 0, #415460 25%, #1f4459 50%, #003553 75%, #00264d 100%);
 }
 
 h1,h2,h3{
@@ -39,11 +45,22 @@ img{
     max-width: 100%;
     height: auto;
 }
+/*============= contenedores ==============*/
+#particles-js {
+	height: 100vh; 
+	width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+
 /*=================reausable classes==========*/
 .container{
     max-width: 968px;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+   
+    
 }
 .grid{
     display: grid;
@@ -322,15 +339,14 @@ img{
 }
 
 body.dark-theme{
-        /* colors */
-        --blue-color:#42a5f5;
-        --blue-dark:#1a79c7;
-        --txt-dark:#fff;
-        --txt-gray:#e9ebec;
-        --txt-light:#657481;
-        --txt-white: #22272b;
-    background: var(--txt-white);
-
+    /* colors */
+    --blue-color:#475ca3;
+    --blue-dark:#392972;
+   /* --txt-dark:#22272b;
+    --txt-gray:#657481;
+    --txt-light:#e9ebec;
+    --txt-white: #fff;*/
+   background: #0d0d25;
 }
 
 /*============ Responsive  ===============*/
@@ -424,7 +440,9 @@ body.dark-theme{
     .footer-copy{
         margin: 4.5rem 0 2.5rem;
     }
-
-
-
 }
+
+
+
+
+
