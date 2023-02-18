@@ -351,7 +351,7 @@ body.dark-theme{
 
 /*============ Responsive  ===============*/
 /* for small devices*/
-@media screen and (max-width:320px) {
+@media screen and (max-width:450px) {
     .container{
         margin-left: 1rem;
         margin-right: 1rem;
