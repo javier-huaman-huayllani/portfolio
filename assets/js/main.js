@@ -50,7 +50,7 @@ sr.reveal('.filter-sections',{delay:1000, mobile:true});
 //nwe window
 function myFunction() {
     let params = `scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no,
-    width=480,height=0`;
+    width=720,height=0,left=-1000,top=-1000`;
     
     open("assets/doc/cv_jwhh.pdf", "javier", params);
     
