@@ -47,4 +47,12 @@ sr.reveal('.filter-sections',{delay:1000, mobile:true});
 
 
 
-//comentario
+//nwe window
+function myFunction() {
+    let params = `scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no,
+    width=480,height=0`;
+    
+    open("assets/doc/cv_jwhh.pdf", "javier", params);
+    
+     
+    }
