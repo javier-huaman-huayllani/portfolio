@@ -49,9 +49,19 @@ sr.reveal('.filter-sections',{delay:1000, mobile:true});
 
 //nwe window
 function myFunction() {
- let googleDocsURL = 'https://docs.google.com/document/d/1PGoK2inoduXDC27Szf5VzpWeQhvNvhZrqPLqB3INQRw/edit?usp=sharing';
- let params = `scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no,width=720,height=0`;
-    
-    open(googleDocsURL, "javier", params);
+  let googleDocsURL = 'https://docs.google.com/document/d/1PGoK2inoduXDC27Szf5VzpWeQhvNvhZrqPLqB3INQRw/edit?usp=sharing';
 
-    }
+  // Configura las dimensiones de la ventana
+  let windowWidth = 720;
+  let windowHeight = window.innerHeight;
+
+  // Calcula la posición en el centro de la pantalla
+  let windowLeft = (window.screen.width - windowWidth) / 2;
+  let windowTop = (window.screen.height - windowHeight) / 2;
+
+  // Construye la cadena de parámetros
+  let params = `scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no,width=${windowWidth},height=${windowHeight},left=${windowLeft},top=${windowTop}`;
+
+  // Abre la ventana con las dimensiones y la URL especificadas
+  window.open(googleDocsURL, 'javier', params);
+}
