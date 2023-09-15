@@ -49,10 +49,9 @@ sr.reveal('.filter-sections',{delay:1000, mobile:true});
 
 //nwe window
 function myFunction() {
-    let params = `scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no,
-    width=720,height=0`;
+ let googleDocsURL = 'https://docs.google.com/document/d/1PGoK2inoduXDC27Szf5VzpWeQhvNvhZrqPLqB3INQRw/edit?usp=sharing';
+ let params = `scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no,width=720,height=0`;
     
-    open("assets/doc/cv_jwhh.pdf", "javier", params);
-    
-     
+    open(googleDocsURL, "javier", params);
+
     }
