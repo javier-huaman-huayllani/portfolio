@@ -49,7 +49,7 @@ sr.reveal('.filter-sections',{delay:1000, mobile:true});
 
 //nwe window
 function myFunction() {
-  let googleDocsURL = 'https://drive.google.com/file/d/1j7u-axObtVItBrzodggDkwWImuFw9-0D/view?usp=sharing';
+  let googleDocsURL = 'https://drive.google.com/file/d/1YR8ShXh_majveD_n0MfKHyXV1Tx2lV3e/view?usp=sharing';
 
   // Configura las dimensiones de la ventana
   let windowWidth = 720;
