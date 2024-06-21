@@ -37,7 +37,8 @@ const sr= ScrollReveal({
 });
 
 sr.reveal('.profile-data .imgBx');
-sr.reveal('.profile-data .name',{delay:500});
+sr.reveal('.profile-data .name ',{delay:450});
+sr.reveal('.profile-data .saludo',{delay:500});
 sr.reveal('.profile-data .profession',{delay:600});
 sr.reveal('.profile-data .socials',{delay:700});
 sr.reveal('.profile-info ',{interval:100,delay:700});

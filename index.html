@@ -10,34 +10,75 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <!--main style-->
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="assets/js/jquery.timelinr-0.9.7.js"></script>
+    <script src="https://kit.fontawesome.com/7b6b24979e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css" integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous"/>
+   
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/solid.js" integrity="sha384-/BxOvRagtVDn9dJ+JGCtcofNXgQO/CCCVKdMfL115s3gOgQxWaX/tSq5V8dRgsbc" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/fontawesome.js" integrity="sha384-dPBGbj4Uoy1OOpM4+aRGfAOc0W37JkROT+3uynUgTHZCHZNMHfGXsmmvYTffZjYO" crossorigin="anonymous"></script>
+    <script> 
+      $(function(){
+        $().timelinr({
+          autoPlay: 'true',
+          autoPlayDirection: 'forward'
+        })
+      });
+    </script>
+
+<script type="text/javascript" src="assets/js/TagCloud.min.js"></script>
+<style>
+    
+
+    .light {
+        background: #a11818;
+        color: #fff;
+    }
+
+    .content .tagcloud {
+        display: inline-block;
+        margin: 20px;
+    }
+
+</style>
+
 </head>
 <body  >
+
+
     <div id="particles-js"></div>
 
     <!--=====================header profile===================-->
       
     <head >
+
         <div class="container profile grid">
+           
             <!-- theme button-->
             <i id="theme-btn" class="ri-moon-line"></i>
+           
             <div class="profile-data">
+                
                 <div class="imgBx">
+                   
                     <img src="assets/img/avatar-jwhh.jpg" alt="">
                 </div>
-                <h2 class="name">Javier Huaman</h2>
+                <p class="saludo">Hello, I'm</p>
+                <h2 class="name nombre">Javier W.</h2>
                 <h3 class="profession">Software Developer</h3>
                 <div class="socials">
-                    <a href="#"  class="link" target="_blank">
-                        <i class="ri-instagram-line"></i>
-                    </a>
+                    
                     <a href="https://www.linkedin.com/in/jhuamanh/" class="link" target="_blank">
-                        <i class="ri-linkedin-box-line"></i>
+                        <i class="fa-brands fa-linkedin"></i>
                     </a>
                     <a href="https://github.com/jachodev/" class="link"  target="_blank">
-                        <i class="ri-github-line"></i>
+                        <i class="fa-brands fa-github"></i>
                     </a>
                 </div>
             </div>
+            <!--
             <div class="profile-info grid">
                 <div class="group">
                     <h3 class="number">3</h3>
@@ -53,13 +94,15 @@
                 </div>
 
             </div>
+
+            -->
             <div class="profile-btns">
                <!--- ------------- cv donload btn -------- -->
-               <button onclick="myFunction()" class="btn btn-small btn-gray"> view cv <i class="ri-eye-2-line"></i></button>
+               <button onclick="myFunction()" class="btn btn-small btn-gray"> view cv <i class="fa-solid fa-eye"></i></button>
 
     
-                <a href="assets/doc/cv_jwhh.pdf" class="btn" download="">
-                    Download CV <i class="ri-download-line"></i>
+                <a href="assets/doc/cv_jwhh.pdf" class="btn descargar" download="">
+                    Download CV<i class="fa-solid fa-download"></i>
                 </a>
                
                 <div class="small-btns">
@@ -77,7 +120,157 @@
 
     <!--=========================main=========================-->
     <main >
-        <section id="particles-js webcoderskull">
+        
+        <section id="about" class="container  about">  
+            <h1 class="titulo">About Me</h1>
+            <div class="section-container">
+              <div class="about-details-container">
+                <div class="text-container">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
+                      reprehenderit et laborum, rem, dolore eum quod voluptate
+                      exercitationem nobis, nihil esse debitis maxime facere minus sint
+                      delectus velit in eos quo officiis explicabo deleniti dignissimos.
+                      Eligendi illum libero dolorum cum laboriosam corrupti quidem,
+                      reiciendis ea magnam? Nulla, impedit fuga!
+                    </p>
+                  </div> 
+                <div class="about-containers">
+                  <div class="details-container">
+                    <i class="icon-about fa-solid fa-check-to-slot"></i>
+                   
+                    <h3>Experience</h3>
+                    <div class="profile-info grid">
+                        <div class="group">
+                            <h3 class="number">3</h3>
+                            <p class="desc"> Years of <br> work </p>
+                        </div>
+                        <div class="group">
+                            <h3 class="number">+16</h3>
+                            <p class="desc"> Complete <br> proyects </p>
+                        </div>
+                        <div class="group">
+                            <h3 class="number">15</h3>
+                            <p class="desc"> Satisfied <br> customer </p>
+                        </div>
+        
+                    </div>
+                  </div>
+                  <div class="details-container">
+                    <i class="icon-about fa-solid fa-graduation-cap"></i>
+                    <h3>Education</h3>
+                    <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+                  </div>
+                </div>
+               
+              </div>
+            </div>
+            
+        </section>
+
+
+        <section >
+
+           
+            <section>
+                <h1 class="titulo">Experince</h1>
+                <div id="timeline">
+                    
+                    <ul id="dates">
+                      <li><a href="#1900">1900</a></li>
+                      <li><a href="#1930">1930</a></li>
+                      <li><a href="#1944">1944</a></li>
+                      <li><a href="#1950">1950</a></li>
+                      <li><a href="#1971">1971</a></li>
+                      <li><a href="#1977">1977</a></li>
+                      <li><a href="#1989">1989</a></li>
+                      <li><a href="#1999">1999</a></li>
+                      <li><a href="#2001">2001</a></li>
+                      <li><a href="#2011">2011</a></li>
+                    </ul>
+                    <ul id="issues">
+                      <li id="1900">
+                        <div>
+                            <img src="assets/img/experiencia/9.png" width="256" height="256" /> 
+                        </div>
+                       <div>
+                         
+                        <h3>Gobierno Regional del Cusco - GEREDU</h1>
+                         <span class="fecha-experiencia">(De 01/04/2022 - 31/12/2022) </span>
+                         <p class="experience__description">Tareas Realizadas</p>
+                         <p class="experience__description">- Desarrollador de Software Backend  utilizando ( .NET - Core 6)</p>   
+                         <p class="experience__description">- Modelado de base de datos (SQL Server).</p>
+                         <p class="experience__description">- Desarrollo de Procedimientos Almacenados</p>
+                         <p class="experience__description">- Implementación de API REST</p>
+                         <p class="experience__description">- Uso de Entity Framework</p>
+                         <p class="experience__description">- Manejo  de Autenticación  y Autorización Con  JWT</p>
+                         <p class="experience__description">- Trabajo con control de Versiones Git</p>
+                         <p class="experience__description">- Uso de Swagger para documentación de APIs</p>
+                         <p class="experience__description">- Manejo de Servidor Internet Information Services (IIS)</p>
+                         <p class="experience__description">- Despliegue de Backend y Frontend en Servidor IIS</p>
+                         <p class="experience__description">- Manejo de Versión de  Código Azure Devops</p>
+
+                        
+                       </div>
+                        
+                    </li>
+                      <li id="1930">
+                        
+                        <h1>1930</h1>
+                        <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+                      </li>
+                      <li id="1944">
+                        
+                        <h1>1944</h1>
+                        <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+                      </li>
+                      <li id="1950">
+                       
+                        <h1>1950</h1>
+                        <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+                      </li>
+                      <li id="1971">
+                        
+                        <h1>1971</h1>
+                        <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+                      </li>
+                      <li id="1977">
+                       
+                        <h1>1977</h1>
+                        <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+                      </li>
+                      <li id="1989">
+                      
+                        <h1>1989</h1>
+                        <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+                      </li>
+                      <li id="1999">
+                      
+                        <h1>1999</h1>
+                        <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+                      </li>
+                      <li id="2001">
+                       <!-- <img src="assets/img/experiencia/9.png" width="256" height="256" /> -->
+                        <h1>2001</h1>
+                        <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+                      </li>
+                      <li id="2011">
+                        
+                        <h1>2011</h1>
+                        <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+                      </li>
+                    </ul>
+                    <div id="grad_left"></div>
+                    <div id="grad_right"></div>
+                    <a href="#" id="next">+</a>
+                    <a href="#" id="prev">-</a>
+                  </div>
+
+            </section>
+    
+
+
+
             <div class="filter container">
                 <!-- Filter tabs-->
                 <div class="filter-tabs">
@@ -264,12 +457,43 @@
                  </div>
             </div>
         </section>
+    </section>
+    
+    <section class="skills-circle container">
+       
+    <div class="content">
+        <!-- content -->
+    </div>
+
+    
+
+    </section>
+
+
+
+
+    <section id="contact">
+     
+      <h1 class="titulo">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+            <i class="icon-contact fa-solid fa-envelope"></i>
+          <p><a class="a-contact" href="mailto:examplemail@gmail.com">jhuaman.dev@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+            <i class=" icon-contact fa-brands fa-linkedin-in"></i>
+          <p><a class="a-contact"  href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+
     </main>
     <!--==========================footer======================-->
     <footer>
         <div class="container">
             <span class="footer-copy">
-                &#169; jachodev. all rights reserved
+                &#169; jachodev
             </span>
         </div>
     </footer>
@@ -292,7 +516,17 @@
     <script src="assets/js/app.js"></script>
  
 
-    <!-- stats.js -->
+    <script>
+        var texts = [
+            'Html', 'Css', 'JavaScript',
+            'CSS3', 'Bootstrap', 'Java',
+            'Spring Boot', 'Net.7', 'Angular',
+            'PHP', 'Python', 'MySql','SqlServer','PostgreSQL'
+        ];
+        var tc = TagCloud('.content', texts);
+        
+    </script>
+ 
 
 
 </body>
