@@ -9,7 +9,7 @@
     --txt-gray:#e9ebec;
     --txt-light:#657481;
     --txt-white: #22272b;
-    --txt-otro: #bac1c7;
+    --txt-otro: #c1c3c5;
 
 
 
@@ -26,7 +26,7 @@
     box-sizing: border-box;
 }
 body{
-    background-image: linear-gradient(180deg, #5d6366 0, #415460 25%, #1f4459 50%, #003553 75%, #00264d 100%);
+    background-image: linear-gradient(360deg, #415460 20%, #415460 25%, #1f4459 50%, #003553 75%, #00264d 100%);
    
 }
 
@@ -151,10 +151,25 @@ img{
     align-items: center;
     justify-content: center;
 }
+
+.experince,
+.experince-details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .profile-btns{
     column-gap: 1rem;
 }
+.experince{
+    column-gap: 1rem;
+}
+
 .profile-btns .small-btns{
+    column-gap: .25rem;
+}
+.experince .experince-details{
     column-gap: .25rem;
 }
 /*==============buttons====================*/
@@ -198,7 +213,7 @@ img{
 /*==============filter====================*/
 .filter-tabs{
     margin: 2rem 0 2.5rem;
-    background: var(--txt-light);
+    background: var(--blue-dark);
     padding: .375rem;
     border-radius: .75rem;
     display: flex;
@@ -222,14 +237,32 @@ img{
 }
 .filter-btn:hover,
 .filter-btn.active{
-    background: var(--txt-white);
+    background: var(--blue-color);
 }
+
+
 .titulo {
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: center;
     margin-bottom: 1rem;
     color :var(--blue-color);
   }
+
+  .titulo::after{
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px; /* Puedes ajustar el grosor de la línea aquí */
+    background-color: var(--blue-color); /* Color de la línea */
+    margin: 0 auto; /* Centra la línea debajo del texto */
+    
+    
+   
+    bottom: -10px; /* Espacio entre el h1 y la línea */
+  }
+
+  
+
 
 /* ICONS */
 
@@ -246,42 +279,11 @@ img{
   }
 
 /* ABOUT SECTION */
+.about-details{
+    
+    margin-top: 1.5rem;
 
-
-#about {
-    
-    position: relative;
-    border-top: var(--blue-dark) 0.1rem solid;
-    
-    
-  }
-  
-  .about-containers {
-    gap: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-  }
-  
-  .about-details-container {
-    justify-content: center;
-    flex-direction: column;
-  }
-  
-  .about-containers,
-  .about-details-container {
-    display: flex;
-  }
-  
-  .about-pic {
-    border-radius: 2rem;
-  }
-  
-  .arrow {
-    position: absolute;
-    right: -5rem;
-    bottom: 2.5rem;
-  }
-  
+}
   .details-container {
     padding: 1.5rem;
     flex: 1;
@@ -290,6 +292,7 @@ img{
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
     text-align: center;
+    height: 11em;
   }
   
 
@@ -301,28 +304,35 @@ img{
   }
   
 /*======== EXPRECIENCIA =============*/
+.section-experince{
+    margin-top: 3rem;
+}
 #timeline {
     width: 800px;
-    height: 350px;
+    height: auto;
     overflow: hidden;
-    margin: 100px auto;
+    margin: 2rem auto;
     position: relative;
     background: url('../img/experiencia/dot.gif') left 45px repeat-x;
-  }
-    #dates {
-      width: 800px;
-      height: 60px;
-      overflow: hidden;
-    }
-      #dates li {
-        list-style: none;
-        float: left;
-        width: 100px;
-        height: 50px;
-        font-size: 24px;
-        text-align: center;
-        background: url('../img/experiencia/biggerdot.png') center bottom no-repeat;
-      }
+}
+    
+#dates
+{
+    width: 800px;
+    height: 60px;
+    overflow: hidden;
+    
+}
+#dates li 
+{
+    list-style: none;
+    float: left;
+    width: 100px;
+    height: 50px;
+    font-size: 24px;
+    text-align: center;
+    background: url('../img/experiencia/biggerdot.png') center bottom no-repeat;
+}
         #dates a {
           line-height: 38px;
           padding-bottom: 10px;
@@ -336,12 +346,12 @@ img{
       height: 350px;
       overflow: hidden;
     } 
-      #issues li {
-        width: 800px;
-        height: 350px;
-        list-style: none;
-        float: left;
-      }
+#issues li {
+    width: 800px;
+    height: 350px;
+    list-style: none;
+    float: left;
+}
         #issues li.selected img {
           -webkit-transform: scale(1.1,1.1);
           transform: scale(1.1,1.1);
@@ -371,7 +381,11 @@ img{
           line-height: 22px;
           text-shadow: #000 1px 1px 2px;
         }
-    
+        
+#dates a{
+    color:#d8c280 ;
+}
+
     #grad_left,
     #grad_right {
       width: 100px;
@@ -424,7 +438,18 @@ img{
 }
 
 
+
+
+
+
+
+
 /*==============projects==================*/
+
+.experience__description .fa-solid {
+    color: var(--blue-color);
+}
+
 .projects-card{
     position:relative;
     border-radius: 1rem;
@@ -566,6 +591,11 @@ body.dark-theme{
 
 .skills-circle{
     margin-top: 5rem;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+       
+    
     
 }
 .content{
@@ -677,12 +707,83 @@ body.dark-theme{
         flex-direction: column;
         row-gap: 1rem;
     }
+    .experince{
+        flex-direction: column;
+        row-gap: 1rem;
+    }
     .skills-box{
         column-gap:1rem ;
     }
-   
 
+    /**/
+    /*======== EXPRECIENCIA =============*/
+    #about .details-container{
+        width: 350px;
+    }
+    #timeline {
+        width: 400px;
+        height: 670px;
     
+    
+    }
+    
+    .experince{
+        width: 400px;
+    }
+    #dates
+    {
+        width: 400px;
+        height: 60px;
+        overflow: hidden;
+        
+    }
+    #dates li 
+    {
+        
+        font-size: 17px;
+    }
+        
+        
+    #issues {
+        width: 400px;
+        height: 600px;
+        overflow: hidden;
+    } 
+
+
+            
+    #dates a{
+        color:#d8c280 ;
+    }
+
+        #next,
+        #prev {
+        margin-top:27rem;
+        position: relative;
+        top: 0;
+        font-size: 200px;
+        top: 200px;
+        
+      
+        }
+
+    /* ==== contact ====*/
+       
+          
+          .contact-info-upper-container {
+            
+            width: 400px;
+           
+          }
+          
+          
+          
+          .contact-info-container p {
+            font-size: 1rem;
+          }
+          
+  
+
 }
 /* for meduim devices*/
 @media screen and (min-width:576px) {
@@ -706,9 +807,7 @@ body.dark-theme{
         column-gap: 3rem;
     }
 
-    .details-container{
-        grid-template-columns: repeat(2,332px);
-    }
+ 
 }
 /*for large devices*/
 @media screen and (min-width:1024px) {
@@ -741,6 +840,9 @@ body.dark-theme{
         column-gap: 3rem;
     }
     .profile-btns{
+        column-gap: 2rem;
+    }
+    .experince{
         column-gap: 2rem;
     }
     .projects{
