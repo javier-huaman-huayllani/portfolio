@@ -383,7 +383,7 @@ img{
         }
         
 #dates a{
-    color:#d8c280 ;
+    color: var(--blue-dark) ;
 }
 
     #grad_left,
@@ -432,9 +432,17 @@ img{
           opacity: 0.2;
         }
 
-
+.lugar-experiencia{
+    color: var(--blue-color);
+}
 .fecha-experiencia{
-    color: var(--txt-otro);
+    color: var(--blue-dark);
+}
+
+.experience-description-tarea{
+    color: var(--txt-gray);
+    font-weight: 500;
+   
 }
 
 
@@ -442,9 +450,11 @@ img{
 
 
 
-
-
 /*==============projects==================*/
+.experience__description{
+    color: var(--txt-otro);
+}
+
 
 .experience__description .fa-solid {
     color: var(--blue-color);
@@ -750,10 +760,6 @@ body.dark-theme{
         overflow: hidden;
     } 
 
-
-            
-    #dates a{
-        color:#d8c280 ;
     }
 
         #next,
