@@ -211,6 +211,12 @@ img{
 }
 
 /*==============filter====================*/
+.filter-sections{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
 .filter-tabs{
     margin: 2rem 0 2.5rem;
     background: var(--blue-dark);
