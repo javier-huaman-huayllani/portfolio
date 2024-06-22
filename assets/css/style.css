@@ -436,11 +436,11 @@ img{
     color: var(--blue-color);
 }
 .fecha-experiencia{
-    color: var(--blue-dark);
+    color: #a7afb8;
 }
 
 .experience-description-tarea{
-    color: var(--txt-gray);
+    color: #bdbdc9;
     font-weight: 500;
    
 }
